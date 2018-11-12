@@ -1,0 +1,132 @@
+body {
+    font-family: Calibri;
+}
+
+h1.main {
+    border-bottom: 1px solid #ccc;
+}
+
+h2.testimonials {
+    margin-bottom: 0px;
+}
+
+h2.testimonials span {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.main-wrap {
+    width: 1050px;
+    margin:0 auto;
+}
+
+.header {
+    width:100%;
+    height:65px;
+    border-bottom: 1px #ccc solid;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia;
+    font-weight: bolder;
+    color: steelblue;
+    font-size: 30px;
+    float:left;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.logo span {
+    color: #000;
+    font-size: 12px;
+}
+
+.main-menu {
+    float:right;
+}
+
+.main-menu .menu ul {
+    list-style: none;
+}
+
+.main-menu .menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-menu .menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.main-menu .menu li a:visited {
+    color: #000;
+}
+
+.main-menu .menu li a:hover, .main-menu .menu li a:active {
+    color: #D40000;
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 10px 0;
+}
+
+.testimonials label {
+    width: 150px;
+}
+
+.shop-button {
+    background-color: steelblue;
+    color: #fff;
+    border: 0;
+    padding: 5px 10px;
+}
+
+.shop-button {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cat-product {
+    width:29%;
+    float: left;
+    min-height: 385px;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.cat-product .image {
+    min-height: 225px;
+}
+
+.cat-product .price {
+    color: #D40000;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.product-info .price {
+    color: #D40000;
+    font-size:30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cat-item-image {
+    border: 1px solid #eee;
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+.product-info {
+    float: right;
+    max-width: 700px;
+    text-align: right;
+}

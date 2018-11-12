@@ -20,7 +20,7 @@ if ($_FILES) {
 
         move_uploaded_file( $_FILES['photo']['tmp_name'], $path );
 
-        $query = "INSERT INTO images (url, size, name) VALUES ('$path', '$size', '$name')";
+        $query = "INSERT INTO images (image_url, image_size, image_name) VALUES ('$path', '$size', '$name')";
         if ( !mysqli_query( $db_connect, $query ) ) {
             printf( "Ошибка: %s\n", mysqli_error( $db_connect ) );
         }
@@ -28,7 +28,7 @@ if ($_FILES) {
 }
 
 //Выводим галаерею
-$query = "SELECT * FROM images ORDER BY views DESC ";
+$query = "SELECT * FROM images ORDER BY image_views DESC ";
 
 $res = mysqli_query($db_connect, $query);
 
