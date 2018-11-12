@@ -22,6 +22,6 @@ foreach ($res as $testimonial) { ?>
 		<p><b>Отзыв:</b></p>
 		<textarea maxlength="1000" name="testimonial" rows="10" cols="45"><?=$_POST['testimonial']?></textarea>
 		<br><br>
-		<button type="submit" name="testSubmit">ОТПРАВИТЬ</button>
+		<button class="shop-button" type="submit" name="testSubmit">ОТПРАВИТЬ</button>
 	</form>
 <?php include('footer.php'); ?>
