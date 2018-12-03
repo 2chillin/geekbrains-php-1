@@ -1,4 +1,5 @@
 <?php
+
 //Database config
 $db_name = 'shop';
 $db_host = '192.168.1.10';
