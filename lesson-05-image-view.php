@@ -12,10 +12,10 @@ require ("config.php");
 if($_GET['image_id']) {
 	$image_id = $_GET['image_id'];
 
-	$query = "UPDATE images SET views=views+1 WHERE id=$image_id";
+	$query = "UPDATE images SET image_views=image_views+1 WHERE image_id=$image_id";
 	mysqli_query($db_connect, $query);
 
-	$query = "SELECT * FROM images WHERE id=$image_id";
+	$query = "SELECT * FROM images WHERE image_id=$image_id";
 	$res = mysqli_query($db_connect, $query);
 	$image = mysqli_fetch_assoc($res);
 
