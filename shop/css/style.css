@@ -2,8 +2,9 @@ body {
     font-family: Calibri;
 }
 
-h1.main {
+h1.main, h2.main {
     border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
 }
 
 h2.testimonials {
@@ -38,17 +39,76 @@ h2.testimonials span {
     line-height: 20px;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:visited {
+    color:steelblue;
+}
+
 .logo span {
     color: #000;
     font-size: 12px;
+}
+.admin-menu .menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.admin-menu .menu li a {
+    font-size: 18px;
+
+
+}
+
+.top-menu {
+    text-align: right;
+}
+
+.top-menu ul {
+    margin: 0;
+}
+
+.top-menu  .menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-menu {
+    float:right;
+}
+
+.footer-menu .menu ul {
+    list-style: none;
+}
+
+.footer-menu .menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-menu .menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top-menu  .menu li a {
+    font-size: 16px;
+}
+
+.menu li a {
+    color: #000000;
 }
 
 .main-menu {
     float:right;
 }
 
-.main-menu .menu ul {
+.main-menu ul.menu {
     list-style: none;
+    margin-top: 5px;
 }
 
 .main-menu .menu li {
@@ -62,11 +122,11 @@ h2.testimonials span {
     font-size: 22px;
 }
 
-.main-menu .menu li a:visited {
-    color: #000;
+.main-menu .menu li a:visited, .top-menu .menu li a:visited {
+    color: #000000;
 }
 
-.main-menu .menu li a:hover, .main-menu .menu li a:active {
+.main-menu .menu li a:hover, .main-menu .menu li a:active, .top-menu  .menu li a:hover, .top-menu  .menu li a:active {
     color: #D40000;
 }
 
@@ -93,12 +153,13 @@ h2.testimonials span {
 }
 
 .cat-product {
-    width:29%;
+    width:28%;
     float: left;
     min-height: 385px;
     border: 1px solid #eee;
     padding: 20px;
     text-align: center;
+    margin:5px;
 }
 
 .cat-product .image {
@@ -109,6 +170,10 @@ h2.testimonials span {
     color: #D40000;
     font-size:18px;
     font-weight: bold;
+}
+
+.cat-product a {
+    text-decoration: none;
 }
 
 .product-info .price {
@@ -129,4 +194,39 @@ h2.testimonials span {
     float: right;
     max-width: 700px;
     text-align: right;
+}
+
+.qty span {
+    color: green;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.login tr td {
+    padding:5px;
+}
+
+.message-err {
+     color: #D40000;
+ }
+
+.message-ok {
+    color: #048e1b;
+}
+
+.cart {
+    display: block;
+    width: 220px;
+    float: right;
+}
+
+.table-zebra tr td {
+    border: 1px solid #999;
+    padding: 7px;
+}
+
+.table-zebra tr.zebra-head td, .table-zebra tr.zebra-foot td{
+    background-color: #eee;
 }

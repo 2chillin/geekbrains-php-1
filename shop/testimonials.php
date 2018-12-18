@@ -1,17 +1,11 @@
-<?php include('header.php'); ?>
+<?php
+    $title = 'Отзывы';
+    include_once('controllers/testimonials-ctrl.php');
+    include('header.php');
+?>
 <h1 class="main">Отзывы</h1>
 <?php
-//Записываем новый отзыв
-if(isset($_POST['testSubmit'])) {
-	$date = date('d-m-Y H:i');
-	$query = "INSERT INTO testimonials (name, text, date) VALUES ('$_POST[name]', '$_POST[testimonial]', '$date')";
-	if(!mysqli_query( $db_connect, $query )) {
-		echo 'error'. mysqli_error($db_connect);
-	};
-}
-$query = "SELECT * FROM testimonials ORDER BY date DESC ";
-$res = mysqli_query($db_connect, $query);
-foreach ($res as $testimonial) { ?>
+foreach (BaseGetAll('testimonials', $db_connect) as $testimonial) { ?>
 	<h2 class='testimonials'><?=$testimonial['name']?> <span>(<?=$testimonial['date']?>)</span></h2>
 	<p style='border-bottom: 1px dotted #ccc; margin: 5px 0 5px 0; padding-bottom: 10px;'><?=$testimonial['text']?></p>
 <?php } ?>
