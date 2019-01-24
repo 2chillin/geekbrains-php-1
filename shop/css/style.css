@@ -152,10 +152,16 @@ h2.testimonials span {
     text-transform: uppercase;
 }
 
+#button-more {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
 .cat-product {
     width:28%;
     float: left;
-    min-height: 385px;
+    min-height: 420px;
     border: 1px solid #eee;
     padding: 20px;
     text-align: center;
@@ -230,3 +236,4 @@ h2.testimonials span {
 .table-zebra tr.zebra-head td, .table-zebra tr.zebra-foot td{
     background-color: #eee;
 }
+
