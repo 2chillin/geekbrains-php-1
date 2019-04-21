@@ -18,6 +18,14 @@ function BaseGetWhere($table, $where, $connect,  $orderby='id') {
 	return $res;
 }
 
+function BaseProdGetLimit($table, $limit, $offset, $connect,  $orderby='id') {
+	$query = sprintf("SELECT * FROM {$table} WHERE products.id = images.product_id ORDER BY '%s' DESC LIMIT %d OFFSET %d", $orderby, $limit, $offset);
+	if(!$res = mysqli_query( $connect, $query )) {
+		echo 'error: '. mysqli_error($connect);
+	}
+	return $res;
+}
+
 function BaseInsertData ($table, $data, $connect){
 	$query = "INSERT INTO  $table VALUES ($data)";
 	if(!mysqli_query( $connect, $query )) {

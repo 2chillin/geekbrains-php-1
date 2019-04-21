@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/order.js"></script>
+    <script src="js/catalogue.js"></script>
 	<title><?=$title?></title>
 </head>
 <body>
